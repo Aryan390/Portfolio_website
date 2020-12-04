@@ -1,0 +1,34 @@
+.nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(-20vh);
+  height: 20vh;
+  width: 100%;
+  padding-bottom: 1.2rem;
+  background: red;
+  z-index: 101;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  background: linear-gradient(235deg, rgba(0, 0, 0, 0.623),rgba(31, 27, 27, 0.801));
+  transition: all .5s ease-in;
+}
+
+.nav.appear{
+  transform: translateY(0px);
+}
+
+.nav li a{
+  color: white;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  transition: all .5s ease-in-out;
+}
+
+.nav li a:hover{
+  color: rgb(133, 133, 133);
+}
