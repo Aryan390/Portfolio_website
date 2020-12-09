@@ -1,5 +1,6 @@
 import typeWriter from '../typewriter.js'
 
+
 // all dom elements
 const circle = document.getElementById('circle')
 const nav = document.getElementById('nav')
@@ -74,3 +75,38 @@ $('.nav li a').on('click', function(event) {
     );
   }
 });
+
+
+// gsap animation
+gsap.registerPlugin(ScrollTrigger)
+
+
+gsap.to('#para-1',{
+  scrollTrigger: {
+    trigger: '#para-1',
+    toggleActions: 'restart pause resume none'
+  },
+  duration: 1,
+  x: 0,
+  opacity: 1
+})
+
+gsap.to('#para-2',{
+  scrollTrigger: {
+    trigger: '#para-2',
+    toggleActions: 'restart pause resume none'
+  },
+  duration: 1,
+  x: 0,
+  opacity: 1
+})
+
+// gsap animation for skill progress bar
+gsap.from('.progress-bar',{
+  scrollTrigger: {
+    trigger: '.progress-bar',
+    toggleActions: 'restart pause resume none'
+  },
+  duration: .8,
+  width: 0
+})
