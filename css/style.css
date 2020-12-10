@@ -2,6 +2,7 @@
 
 :root{
   --main-color: rgb(11, 13, 14);
+  --text-color: goldenrod;
 }
 
 *{
@@ -32,7 +33,7 @@ a{
 
 /* main area styling */
 #main{
-  background: url('./img/max-duzij-qAjJk-un3BI-unsplash.jpg') no-repeat center center/cover fixed;
+  background: url('../img/max-duzij-qAjJk-un3BI-unsplash.jpg') no-repeat center center/cover fixed;
   background-color: rgb(0, 238, 255);
   background-blend-mode: luminosity;
   color: white;
@@ -108,7 +109,7 @@ a{
 /* about-section styling */
 .about-section{
   margin-top: 30px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -118,15 +119,15 @@ a{
 
 .about-text{
   width: 60%;
-  font-size: 1.15rem;
-  line-height: 1.8;
+  font-size: 1.2rem;
+  line-height: 2.3;
 }
-
 
 
 .about-text h1{
   margin-bottom: 2rem;
   font-size: 3rem;
+  color: var(--text-color);
 }
 
 /* about-section image styling */
@@ -146,30 +147,31 @@ a{
 .skill-section{
   display: flex;
   justify-content: center;
+  align-items: center;
   color: white;
   margin-top: 5rem;
 }
 
 .progress-area{
   width: 50%;
-  margin-left: 3rem;
   margin-top: 20px;
+  margin-left: 3rem;
 }
 
 .experience-area{
   width: 50%;
-  margin-right: 3rem;
+  margin-left: 1rem;
 }
 
 .experience-area h1{
   font-size: 3rem;
-  color: goldenrod;
+  color: var(--text-color);
   margin-bottom: 1.5rem;
 }
 
 .experience-area p{
-  line-height: 1.8;
-  font-size: 18px;
+  line-height: 2.1;
+  font-size: 1.1rem;
 }
 
 .skill-list{
@@ -193,7 +195,7 @@ a{
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  /* width: 50%; */
   height: 100%;
   border-radius: inherit;
   background: rgb(221, 29, 125);
@@ -210,7 +212,7 @@ a{
   width: 90%;
 }
 .progress-area li:nth-child(4) .progress-box .progress-bar{
-  width: 95%;
+  width: 90%;
 }
 .progress-area li:nth-child(5) .progress-box .progress-bar{
   width: 40%;
@@ -225,7 +227,7 @@ a{
 /* contact-section */
 .contact-section{
   margin-top: 5rem;
-  background: url('./img/ewan-robertson-fDsCIIGdw9g-unsplash.jpg') no-repeat center center/cover fixed;
+  background: url('../img/ewan-robertson-fDsCIIGdw9g-unsplash.jpg') no-repeat center center/cover fixed;
   /* height: 50vh; */
   display: flex;
   flex-direction: column;
@@ -251,6 +253,7 @@ a{
 .headings{
   margin-top: 1rem;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .headings h1{
@@ -316,6 +319,7 @@ a{
 
 /* work contact */
 .work-contact{
+  margin-top: .8rem;
   padding: 1rem;
   color: white;
   display: flex;
