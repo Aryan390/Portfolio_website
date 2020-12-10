@@ -57,7 +57,10 @@ window.addEventListener('scroll',e => {
 })  
 
 // spinner preloader
-window.addEventListener('load',() => overlay.style.display = 'none')
+window.addEventListener('load',() => {
+  overlay.style.display = 'none';
+  $("body").css("overflow", "auto");
+})
 
 
 // smooth scrolling
