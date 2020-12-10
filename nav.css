@@ -11,8 +11,8 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
-  background: linear-gradient(235deg, rgba(0, 0, 0, 0.623),rgba(31, 27, 27, 0.801));
-  transition: all .5s ease-in;
+  background: linear-gradient(235deg, rgba(0, 0, 0, 0.705),rgba(31, 27, 27, 0.863));
+  transition: all .38s ease-in;
 }
 
 .nav.appear{
